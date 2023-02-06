@@ -1,0 +1,13 @@
+#defining the function to remove punctuation
+def remove_punctuation(text):
+    punctuationfree="".join([i for i in text if i not in string.punctuation])
+    return punctuationfree
+#storing the puntuation free text
+
+no_punctuation = []
+for i in berita:
+    no_punctuation.append(remove_punctuation(i))
+for i in range(len(no_punctuation)):    
+    print(no_punctuation[i])
+
+
